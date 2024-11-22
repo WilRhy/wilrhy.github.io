@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raining Night Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Dosis', sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #1e1e2f, #1a1a27);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Raining Effect as Background */
+    .rain-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Ensure rain is behind all content */
+    }
+
+    .rain-background div {
+      position: absolute;
+      bottom: 100%;
+      width: 2px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.2);
+      animation: fall 1.5s linear infinite;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+      }
+    }
+
+    .rain-background div:nth-child(odd) {
+      animation-duration: 1.2s;
+    }
+
+    /* Portfolio Template */
+    .portfolio-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1; /* Ensure content appears above rain */
+    }
+
+    .header {
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 3em;
+      font-weight: 700; /* Bold for Dosis */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .header p {
+      font-size: 1.2em;
+      font-weight: 400; /* Normal weight for Dosis */
+    }
+
+    .portfolio-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: left;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .portfolio-item h3 {
+      margin: 0;
+      font-size: 1.5em;
+      font-weight: 700; /* Bold for headings */
+    }
+
+    .portfolio-item p {
+      font-size: 0.9em;
+      font-weight: 400; /* Normal weight */
+    }
+  </style>
+</head>
+<body>
+  <!-- Raining Effect -->
+  <div class="rain-background">
+    <!-- Multiple raindrops -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- Add more divs for more rain -->
+  </div>
+
+  <!-- Portfolio Content -->
+  <div class="portfolio-container">
+    <div class="header">
+      <h1>My Portfolio</h1>
+      <p>Welcome to my portfolio! Explore my projects and experiences.</p>
+    </div>
+    <div class="portfolio-grid">
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio-item">
+        <h3>Project 1</h3>
+        <p>Description of your first project. Briefly explain what it is about.</p>
+      </div>
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio-item">
+        <h3>Project 2</h3>
+        <p>Description of your second project. Share interesting details here.</p>
+      </div>
+      <!-- Portfolio Item 3 -->
+      <div class="portfolio-item">
+        <h3>Project 3</h3>
+        <p>Description of your third project. Highlight its importance.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
