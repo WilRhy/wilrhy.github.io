@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melaton | Official Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <!-- Header -->
+    <header class="text-center py-12">
+      <h1 class="text-5xl font-extrabold text-[#33ff83]">Melaton</h1>
+      <p class="text-lg text-gray-300 mt-2">
+        Innovating Software • Building the Future
+      </p>
+    </header>
+
+    <!-- Announcement -->
+    <section class="max-w-3xl mx-auto px-6 py-10 text-center">
+      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-md border border-[#33ff83]/20">
+        <h2 class="text-2xl font-semibold mb-4 text-[#33ff83]">Domain Update</h2>
+        <p class="text-gray-400 mb-4">
+          Our previous domain <span class="text-white font-semibold">melaton.pro</span> has been discontinued.  
+          A new official domain will be announced soon.
+        </p>
+        <p class="text-gray-400">
+          Stay connected with us here for updates and future announcements.
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="max-w-5xl mx-auto px-6 py-10 grid gap-6 md:grid-cols-2">
+      <div class="bg-[#1a1a1a] p-6 rounded-2xl border border-[#33ff83]/20">
+        <h2 class="text-xl font-semibold mb-2">Who We Are</h2>
+        <p class="text-gray-400">
+          Melaton is a technology company dedicated to creating software, tools,
+          and digital experiences that make life easier and more productive.
+        </p>
+      </div>
+
+      <div class="bg-[#1a1a1a] p-6 rounded-2xl border border-[#33ff83]/20">
+        <h2 class="text-xl font-semibold mb-2">Our Mission</h2>
+        <p class="text-gray-400">
+          We aim to innovate in the areas of security, productivity, and
+          creativity — empowering users with next-generation applications.
+        </p>
+      </div>
+    </section>
+
+    <!-- Future Projects -->
+    <section class="max-w-5xl mx-auto px-6 py-10">
+      <div class="bg-[#1a1a1a] p-6 rounded-2xl border border-[#33ff83]/20 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Upcoming Projects</h2>
+        <p class="text-gray-400">
+          We are currently working on several projects that have not yet been
+          announced. Stay tuned for future updates right here.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-500 mt-16 py-8">
+      &copy; <span id="year"></span> Melaton. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
