@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WilRhy | Music</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <!-- Header -->
+    <header class="text-center py-10">
+      <h1 class="text-4xl font-extrabold text-[#33ff83]">WilRhy</h1>
+      <p class="text-lg text-gray-300 mt-2">All My Music • All Platforms</p>
+    </header>
+
+    <!-- Main Section -->
+    <main class="max-w-5xl mx-auto px-6 grid gap-6 md:grid-cols-2">
+      <!-- Spotify -->
+      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-md border border-[#33ff83]/20">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" class="w-10 h-10 mb-4" alt="Spotify"/>
+        <h2 class="text-xl font-semibold mb-2">Spotify</h2>
+        <p class="text-gray-400">Stream my full discography on Spotify.</p>
+        <a href="https://open.spotify.com/artist/1b29I5ZHtYsY0QF2NDxAai"
+          class="inline-block mt-4 px-4 py-2 border border-[#33ff83] text-[#33ff83] rounded hover:bg-[#33ff83]/10 transition">Listen</a>
+      </div>
+
+      <!-- Apple Music -->
+      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-md border border-[#33ff83]/20">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Apple_Music_icon.svg" class="w-10 h-10 mb-4" alt="Apple Music"/>
+        <h2 class="text-xl font-semibold mb-2">Apple Music</h2>
+        <p class="text-gray-400">Available on Apple Music for all iOS/macOS users.</p>
+        <a href="#" class="inline-block mt-4 px-4 py-2 border border-[#33ff83] text-[#33ff83] rounded hover:bg-[#33ff83]/10 transition">Listen</a>
+      </div>
+
+      <!-- YouTube Music -->
+      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-md border border-[#33ff83]/20">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/YouTube_Music_icon.svg" class="w-10 h-10 mb-4" alt="YouTube Music"/>
+        <h2 class="text-xl font-semibold mb-2">YouTube Music</h2>
+        <p class="text-gray-400">Listen to my songs and playlists on YouTube Music.</p>
+        <a href="#" class="inline-block mt-4 px-4 py-2 border border-[#33ff83] text-[#33ff83] rounded hover:bg-[#33ff83]/10 transition">Listen</a>
+      </div>
+
+      <!-- SoundCloud -->
+      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-md border border-[#33ff83]/20">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/SoundCloud_logo_2013.svg" class="w-20 mb-4" alt="SoundCloud"/>
+        <h2 class="text-xl font-semibold mb-2">SoundCloud</h2>
+        <p class="text-gray-400">Check out my beats, drafts, and exclusive uploads.</p>
+        <a href="#" class="inline-block mt-4 px-4 py-2 border border-[#33ff83] text-[#33ff83] rounded hover:bg-[#33ff83]/10 transition">Listen</a>
+      </div>
+
+      <!-- Amazon Music -->
+      <div class="bg-[#1a1a1a] p-6 rounded-2xl shadow-md border border-[#33ff83]/20">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Amazon_Music_logo.svg" class="w-24 mb-4" alt="Amazon Music"/>
+        <h2 class="text-xl font-semibold mb-2">Amazon Music</h2>
+        <p class="text-gray-400">Stream my songs on Amazon Music worldwide.</p>
+        <a href="#" class="inline-block mt-4 px-4 py-2 border border-[#33ff83] text-[#33ff83] rounded hover:bg-[#33ff83]/10 transition">Listen</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-500 mt-16 py-8">
+      &copy; <span id="year"></span> WilRhy's Stuff LLC. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
